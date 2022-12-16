@@ -44,15 +44,19 @@ const HomePage = () => {
             const data = await response.json()
             
             if(!data.ok) {
+                console.log('ERROR ' + data.ok)
                 setError(data.message)
                 setData({description:''})
                 setLoading(false)
             }
 
+            console.log('This is response data ' + data)
+
             setImageUrl(data.data)
             setLoading(false)
 
         } catch (error) {
+            console.log('This is error ' + error)
             setError(error)
         }
     }

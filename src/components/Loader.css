@@ -1,0 +1,30 @@
+
+
+.Loader {
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(55, 55, 55, 0.7);
+}
+
+.Spinner {
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.Spinner p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+span {
+    color: #fff;
+    font-size:1.4rem;
+    text-align: center;
+}

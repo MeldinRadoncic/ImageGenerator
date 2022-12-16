@@ -1,0 +1,150 @@
+.main {
+    width: 100%;
+    height: 100%;
+    background: #dd3e54; 
+    background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  
+    background: linear-gradient(to right, #6be585, #dd3e54);
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+p {
+    color: red;
+    font-size: 1rem;
+}
+
+.heading-paragraph {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+    background-color:#fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+
+
+input, select {
+    margin-bottom: 10px;
+    padding:10px;
+    width:300px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+button {
+    background:#000;
+    color: #fff;
+    padding:13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+.ImageBox {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageBox img {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+
+    .main {
+        padding: 2rem auto;
+    }
+
+    .main form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 2rem 1rem;
+        font-size: 20px;
+         
+    }
+
+    select {
+        display: none;
+    }
+
+    .ImageBox {
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .ImageBox img {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width:425px) and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+
+    h1 {
+        font-size: 2.3rem;
+        margin-top: 5rem;
+    }
+    .main form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 3rem 3rem;
+        font-size: 20px;
+         
+    }
+
+    input {
+        font-size: 1.5rem;
+    }
+
+    ::placeholder {
+        font-size: 1rem;
+    }
+
+    select {
+        display: none;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+
+    .ImageBox {
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .ImageBox img {
+        width: 400px;
+    }
+}

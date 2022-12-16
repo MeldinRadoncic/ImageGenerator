@@ -30,7 +30,7 @@ const HomePage = () => {
         if(description === '') return setError('Please Describe your Image.')
         setLoading(true)
         try {
-            const response = await fetch('/api/openai/generateimage', {
+            const response = await fetch('/openai/generateimage', {
                 method:'POST',
                 headers: {
                     'Content-Type':'application/json'

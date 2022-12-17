@@ -31,7 +31,7 @@ const HomePage = () => {
         setLoading(true)
         try {
             const response = await fetch('/openai/generateimage', {
-                method:'POST',
+                method:'GET',
                 headers: {
                     'Content-Type':'application/json'
                 },

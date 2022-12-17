@@ -1,4 +1,7 @@
 import React,{useState} from 'react'
+
+import axios from 'axios'
+
 import Loader from '../components/Loader'
 
 
@@ -30,16 +33,11 @@ const HomePage = () => {
         if(description === '') return setError('Please Describe your Image.')
         setLoading(true)
         try {
-            const response = await fetch('/openai/generateimage', {
-                method:'POST',
-                headers: {
-                    'Content-Type':'application/json'
-                },
-                body:JSON.stringify({
+            const response = await axios.post('/openai/generateimage', {
+            
                     description,
                     size
                 })
-            })
             
             const data = await response.json()
             

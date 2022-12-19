@@ -66,7 +66,7 @@ const HomePage = () => {
         {!loading ? 
         <>
         <section className='main'>
-                <h1>Let's have a fun</h1>
+                <h1>Let's have fun</h1>
                 <p className='heading-paragraph'>Describe the image in any language.</p>
                 <form onSubmit={handleSubmit}>
                     

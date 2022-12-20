@@ -50,13 +50,16 @@ const HomePage = () => {
                 setData({description:''})
                 setLoading(false)
             }
-
-
+                
+            
+            // setData({description:description})
             setImageUrl(data.data)
             setLoading(false)
 
         } catch (error) {
             setError(error)
+            setData({description:''})
+
         }
     }
     
@@ -95,6 +98,7 @@ const HomePage = () => {
             </section>
 
             <section className='ImageBox'>
+                
             {imageUrl && <img src={imageUrl} alt='image'/>}
 
             </section>
@@ -102,7 +106,7 @@ const HomePage = () => {
             </>
             
             : 
-            <Loader/>
+            <Loader description={data.description}/>
             
          }
          </>

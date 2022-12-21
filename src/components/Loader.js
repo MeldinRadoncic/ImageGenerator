@@ -6,7 +6,7 @@ return (
 <div className="Loader">
 <div className="Spinner">
       <ClimbingBoxLoader/>
-      <p>Man in the pool playing card</p>
+      <p>Just a moment...</p>
     </div>
     </div>
 )
